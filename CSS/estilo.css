@@ -1,0 +1,254 @@
+:root{
+    background-color: black;
+    margin: 0;
+}
+
+/*------NAV-----------*/
+
+a:link {
+	text-decoration: none;
+}
+nav a {
+    text-decoration: none;
+    color: white;
+}
+  
+nav a:hover {
+    color: #B4F80E;
+    transition: color 0.3s ease;
+}
+nav{
+    display: flex;
+    background-color: black;
+    width: 100%;
+    font-family: "Archivo", sans-serif;
+    font-style: normal;
+    font-size: 15px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+}
+li{
+    width: 100px;
+    display: inline-block;
+    color: white;
+    text-align: center;
+    
+}
+li img{
+    width: 80px;
+}
+#donde_estamos{
+    width: 130px;
+}
+
+/* ------------HERO-------------- */
+.contenedor {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: black;
+}
+
+
+.hero {
+    width: 50%;
+    text-align: left; 
+}
+
+.hero_in {
+    font-size: 60px;
+    color: white;
+    font-family: archivo;
+    padding-left: 30px;
+    margin-top: 20px;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+#deportiva {
+    font-size: 50px;
+    color: #B4F80E; 
+}
+
+.hero_foto {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.hero_foto img {
+    width: 100%;
+    height: auto;
+    object-fit: cover; 
+    mask-image: linear-gradient(to left, #ffffff 50%, #ffffff 90%, transparent 100%);    
+
+}
+
+/*--------CTA-----------*/
+.cta-button {
+    margin-top: 20px;
+    padding: 15px 30px;
+    width: 250px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    background: linear-gradient(45deg, #ff00ff, #007bff);
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s ease, transform 0.3s ease;
+    box-shadow: 0px 4px 10px rgba(0, 123, 255, 0.3);
+    cursor: pointer;
+    margin-left: 230px;
+}
+
+.cta-button:hover {
+    background: linear-gradient(45deg, #e600e6, #005bb5);
+    transform: scale(1.05);
+}
+
+.cta-button:active {
+    transform: scale(0.98);
+    box-shadow: 0px 2px 5px rgba(0, 123, 255, 0.2);
+}
+.hero_foto img{
+    width: 800px;
+}
+
+/*----------------PRODUCTOS-----------------------*/
+
+.contenedor_productos{
+    background-color: black;
+}
+
+.productos{
+    width: 1200px;
+    padding-top: 50px;
+    padding-bottom: 100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+
+}
+
+.card:hover {
+    transform: scale(1.02);
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+}
+.boton_personalizado{
+    background-color: #95ff00; 
+    color: rgb(0, 19, 9); 
+    width: 90px;
+    border-radius: 5px;
+    padding: 8px;
+    text-decoration: none;
+    font-family: archivo;
+    font-weight: bold;
+
+}
+.boton_personalizado:hover {
+    background-color: #7ab300a7; 
+}
+
+.card-text_espacio{
+    margin-bottom: 40px;
+}
+.cont_ws{
+	position:fixed;
+	z-index:5;
+	right:70px;
+	bottom: 60px;
+	width:50px;
+}
+.cont_ws img{
+	width:50px;
+    animation-name:animacion;
+	animation-duration:2s;
+}
+.cont_ws img:hover{
+    transform: scale(1.15);
+}
+
+
+footer{
+    background-color: black;
+    border-top: 1px solid #B4F80E;
+}
+.footer{
+    width: 1200px;
+    background-color: black;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    overflow: hidden;
+    text-align: center;
+    align-items: center;
+    padding-bottom: 50px;
+
+}
+
+.footer_in{
+    display: inline;
+    color: white;
+    font-size: 16px;
+    font-family: archivo;
+    width: 400px;
+}
+
+.footer_in_redes{
+    display: inline;
+    padding: 30px;
+    font-family: archivo;
+    color: #B4F80E;
+    font-size: 24px;
+}
+
+.footer_in_redes img{
+    width: 30px;
+}
+#img_mapa{
+    width: 50px;
+    float: left;
+    margin-top: -15px;
+}
+
+#img_mapa img{
+    width: 30px;
+}
+#footer_in_acercate{
+    margin-left: 25px;
+}
+#formulario form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 130px;
+}
+#formulario label, 
+#formulario input, 
+#formulario textarea {
+    width: 60%;
+    margin-bottom: 10px;
+    font-size: 12px;
+}
+
+#formulario input, 
+#formulario textarea {
+    padding: 5px;
+    border: none;
+    border-radius: 4px;
+}
+.textarea{
+    resize: none;
+}

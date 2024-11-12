@@ -1,0 +1,2 @@
+Este sitio web es la tienda online de un local de venta de ropa deportiva. Muestra un catálogo donde los usuarios pueden explorar productos y contactarse directamente con el vendedor a través de WhatsApp para hacer preguntas o concretar compras.
+En la parte principal encuentra un banner con la marca, más abajo está el catalogo de productos organizados en cards con una imagen, breve descripcion y precio del producto, cada uno con un boton para consultar por Whatsapp.
