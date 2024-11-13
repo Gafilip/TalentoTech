@@ -259,14 +259,18 @@ footer{
 
 nav{
     width: 600px;
-    background-color: red;
+    font-size: 18px;
+}
+#donde_estamos{
+    width: 180px;
 }
 .contenedor{
     width: 600px;
 }
 .hero{
-    width: 600px;
+    width: 100%;
 }
+
 .hero_foto{
     display: none;
 }
@@ -279,6 +283,10 @@ nav{
     align-items: center;
     justify-items: center;
     
+}
+footer{
+    width: 600px;
+    background-color: red;
 }
 .footer{
     width: 600px;
