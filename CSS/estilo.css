@@ -132,14 +132,14 @@ li img{
 }
 
 .productos{
-    width: 1200px;
+    width: 1212px;
     padding-top: 50px;
     padding-bottom: 100px;
     margin: auto;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 20px;
-
+    /*grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));*/
+    grid-template-columns: 240px 240px 240px 240px 240px;
+    gap: 3px;
 }
 
 .card:hover {
@@ -251,4 +251,53 @@ footer{
 }
 .textarea{
     resize: none;
+}
+
+/*---------------CELULAR-----------------*/
+@media screen and (min-width:10px) and (max-width:600px)
+{
+
+nav{
+    width: 600px;
+    background-color: red;
+}
+.contenedor{
+    width: 600px;
+}
+.hero{
+    width: 600px;
+}
+.hero_foto{
+    display: none;
+}
+.cta-button {
+    margin-left: 180px;
+}
+.productos{
+    width: 600px;
+    grid-template-columns: auto auto;
+    align-items: center;
+    justify-items: center;
+    
+}
+.footer{
+    width: 600px;
+    background-color: black;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    overflow: hidden;
+    text-align: center;
+    align-items: center;
+    padding-bottom: 50px;
+
+}
+
+.footer_in{
+    display: inline;
+    color: white;
+    font-size: 16px;
+    font-family: archivo;
+    width: 200px;
+}
 }
