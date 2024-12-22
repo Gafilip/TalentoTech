@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name='viewport' content='user-scalable=no, width=600'/>
+   <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
     <link rel="stylesheet" href="CSS/estilo.css">
     <link rel="shortcut icon"  href="img/logo fittin.png">
 	  <link rel="apple-touch-icon" href="img/logo fittin.png">
@@ -15,121 +16,89 @@
     <title>FitTin</title>
 </head>
 <body>
-    <nav>
-      <ul>
-        <li><img src="img/logo fittin.png" alt="logo"></li>
-        <li><a href="#seccion_productos">Productos</a></li>
-        <li><a href="#seccion_productos">Mujer</a></li>
-        <li><a href="#seccion_productos">Hombre</a></li>
-        <li id="donde_estamos"><a href="#seccion_productos" >Donde estamos?</a></li>
-      </ul>
-    </nav>  
-
-    <header>
-        <div class="contenedor">
-            <div class="hero">
-                <div class="hero_in">SENTI COMODIDAD <BR>EN CADA MOVIMIENTO</BR></div>
-                <div class="hero_in" id="deportiva"> ENTRENA CON FITTIN</div>
-                <div class="cta-button">Explora la colección</div>
-            </div>
-            <div class="hero_foto">
-              <img src="img/hero.png" alt="">
-            </div>
-            <!--<div class="hero_foto"><img src="img/principal.jpg" alt=""></div>-->
-            <!--<button>Explora la colección</button>-->
-           <!-- <div class="cta">Explora la colección</div>-->
-        </div>
-    </header>
-    <section>
-      <div class="contenedor_productos" id="seccion_productos">   
-        <div class="productos">
-          <!--remera-->
-          <div class="card" style="width: 15rem;">
-            <img src="img/remera no brand.jpeg" class="card-img-top" alt="img">
-            <div class="card-body">
-              <h5 class="card-title">RERMERA NO BRAND ARGENTINA</h5>
-              <p class="card-text">$10600</p>
-              <a href="#" class="boton_personalizado">Pedila aca</a>
-            </div>
-          </div>
-          <!--buzo-->
-          <div class="card" style="width: 15rem;">
-            <img src="img/buzo atlanta.jpeg" class="card-img-top" alt="img">
-            <div class="card-body">
-              <h5 class="card-title">BUZO CAMPEON</h5>
-              <p class="card-text_espacio">$10600</p>
-              <a href="#" class="boton_personalizado">Pedila aca</a>
-            </div>
-          </div>
-        
-          <!--pantalon-->
-          <div class="card" style="width: 15rem;">
-            <img src="img/shot.jpeg" class="card-img-top" alt="img">
-            <div class="card-body">
-              <h5 class="card-title">SHORT MAQUINA</h5>
-              <p class="card-text_espacio">$10000</p>
-              <a href="#" class="boton_personalizado">Pedila aca</a>
-            </div>
-          </div>
-      
-          <!--calza-->
-          <div class="card" style="width: 15rem;">
-            <img src="img/calza.jpeg" class="card-img-top" alt="img">
-            <div class="card-body">
-              <h5 class="card-title">CALZA MALIBU</h5>
-              <p class="card-text_espacio">$12000</p>
-              <a href="#" class="boton_personalizado">Pedila aca</a>
-            </div>
-          </div>
-      
-          <!--remera mujer-->
-          <div class="card" style="width: 15rem;">
-            <img src="img/remera surf.jpeg" class="card-img-top" alt="img">
-            <div class="card-body">
-              <h5 class="card-title">REMERA SURF DAMA</h5>
-              <p class="card-text_espacio">$7500</p>
-              <a href="#" class="boton_personalizado">Pedila aca</a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="cont_ws">
-        <a href="https://api.whatsapp.com/send?phone=54922153" title="Consultas por whatsapp" target="_blank">
-            <img src="img/ws.png" alt="ws" title="ws">
+  <nav>
+    <ul>
+      <li><img src="img/logo fittin.png" alt="logo"></li>
+      <li><a href="#seccion_productos">Productos</a></li>
+      <li><a href="#seccion_productos">Mujer</a></li>
+      <li><a href="#seccion_productos">Hombre</a></li>
+      <li id="donde_estamos"><a href="#seccion_productos">¿Dónde estamos?</a></li>
+      <li id="carrito">
+        <a href="cart_suma.html">
+          <!--<span id="cart">0</span>-->
+          <img src="img/carrito.png" alt="carrito">
         </a>
+      </li>
+    </ul>
+  </nav>  
+
+  <header>
+      <div class="contenedor">
+          <div class="hero">
+              <div class="hero_in">SENTI COMODIDAD <br>EN CADA MOVIMIENTO</div>
+              <div class="hero_in" id="deportiva">ENTRENA CON FITTIN</div>
+              <div class="cta-button">Explora la colección</div>
+          </div>
+          <div class="hero_foto">
+            <img src="img/hero.png" alt="Imagen Hero">
+          </div>
       </div>
-    </section>
+  </header>
+  
+  <section>
+      <div class="cont_ws">
+          <a href="https://api.whatsapp.com/send?phone=54922153" title="Consultas por whatsapp" target="_blank">
+              <img src="img/ws.png" alt="ws" title="ws">
+          </a>
+      </div>
+  </section>
 
+  <main>
+      <section>
+          <div class="container my-5">
+              <div id="productos-container" class="row">
+                  <!-- Los productos serán cargados dinámicamente aquí -->
+              </div>
+              <!-- Paginación -->
+              <div class="d-flex justify-content-between align-items-center">
+                <button id="prev-btn" class="btn btn-secondary">Anterior</button>
+                <span id="page-info"></span>
+                <button id="next-btn" class="btn btn-secondary">Siguiente</button>
+              </div>
+          </div>
+      </section>    
+  </main>
 
-    <footer>
+  <footer>
       <div class="footer">
-        <div class="footer_in">
-          <div class="footer_in_redes">Encontranos</div>
-          <div class="footer_in_redes"><img src="img/facebook.png" alt=""></div>     
-          <div class="footer_in_redes"><img src="img/instagram.png" alt=""></div>
-        </div>
-        <div class="footer_in">
-          <div id="footer_in_acercate">Acercate a nuestro showroom</div>
-          <div id="img_mapa"><img src="img/mapa.png" alt=""></div>
-          <div>Reconquista 199, Villa Regina (RN)</div>
-        </div>
-        <div class="footer_in" id="formulario">
-          <form action="https://formspree.io/f/mjkvrrka" method="post" target="_blank">
-            <label for="nombre">Nombe y Apellido</label>
-            <input name="Nombre" type="text" id="nombre" required>
-            <label for="email">E-mail</label>
-            <input name="email" type="email" required>
-            <label for="comentarios">Comentarios</label>
-            <textarea name="textarea" id="" required></textarea>
-            <input type="submit">
-          </form>
-        </div>
+          <div class="footer_in">
+              <div class="footer_in_redes">Encontranos</div>
+              <div class="footer_in_redes"><img src="img/facebook.png" alt="Facebook"></div>     
+              <div class="footer_in_redes"><img src="img/instagram.png" alt="Instagram"></div>
+          </div>
+          <div class="footer_in">
+              <div id="footer_in_acercate">Acercate a nuestro showroom</div>
+              <div id="img_mapa"><img src="img/mapa.png" alt="Mapa"></div>
+              <div>Reconquista 199, Villa Regina (RN)</div>
+          </div>
+          <div class="footer_in" id="formulario">
+              <form action="https://formspree.io/f/mjkvrrka" method="post" target="_blank">
+                  <label for="nombre">Nombre y Apellido</label>
+                  <input name="Nombre" type="text" id="nombre" required>
+                  <label for="email">E-mail</label>
+                  <input name="email" type="email" id="email" required>
+                  <label for="comentarios">Comentarios</label>
+                  <textarea name="textarea" id="comentarios" required></textarea>
+                  <input type="submit" id="bot_enviar">
+              </form>
+          </div>
       </div>
-    </footer>
+  </footer>
+  <div id="con_form_result"></div>
 
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="js/js.js"></script>
+  <script src="js/func_carro.js"></script>
 </body>
 
 </html>
